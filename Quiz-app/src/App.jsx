@@ -1,9 +1,9 @@
 import React from 'react'
-import quiz from './Components/Quiz/quiz'
+import Quiz from './Components/Quiz/Quiz'
 const App = () => {
   return (
     <>
-      <quiz/>
+      <Quiz/>
 
     </>
   )
