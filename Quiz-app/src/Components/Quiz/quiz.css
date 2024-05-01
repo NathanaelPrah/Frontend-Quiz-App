@@ -45,11 +45,11 @@
     margin: auto;
     font-size:18px ;
 }
-.correct{
-    background:#dffff2 ;
+.container .correct{
+    background:#4ac091 ;
     border-color: rgb(32, 160, 107);
 }
-.wrong{
-    background:#faebec ;
-    border-color:rgb(224, 89, 89) ;
+.container .wrong{
+    background:#752a2f ;
+    border-color:rgb(219, 60, 60) ;
 }
