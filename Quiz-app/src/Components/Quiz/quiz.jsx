@@ -5,7 +5,7 @@ import './Quiz.css'
 const quiz = () => {
 
 
-    let [index,setIndex] = useState(1);
+    let [index,setIndex] = useState(0);
     let [question,setQuestion] = useState(data[index]);
 
 
