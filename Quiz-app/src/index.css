@@ -7,3 +7,20 @@ body{
   background-image: linear-gradient(rgb(136, 99, 196), rgb(60, 28, 112));
   font-family: poppins;
 }
+:root{
+  --background-color:white;
+  --foreground-color:#313E51 ;
+  --primary-text-color:black;
+  --secondary-text-color:white;
+  --toggle-bg:#A729F5;
+  --toggle-fg:#a729f5;
+}
+[data-theme="dark"]{
+    --background-color:#313E51;
+    --foreground-color:white ;
+    --primary-text-color:white;
+    --secondary-text-color:black;
+    --toggle-bg:#A729F5;
+    --toggle-fg:#a729f5;
+}
+

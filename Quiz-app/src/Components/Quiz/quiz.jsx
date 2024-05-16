@@ -2,6 +2,7 @@ import React, {useState, useRef } from 'react'
 import { data } from '../../assets/data';
 
 import './Quiz.css'
+import { Toggle } from '../Toggle';
 const quiz = () => {
 
     let [index,setIndex] = useState(0);
@@ -61,18 +62,26 @@ const quiz = () => {
     setLock(false);
     setResult(false);
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   ;
+
+   const[isDark,setIsaDark] =useState(true);
+  
+
+
+
+
+
 
   return (
-    <div className='container'>
+    <div className='container' data-theme={isDark ? "dark" : "light"}>
+      
+      
+      <Toggle 
+        isChecked={isDark}
+        handleChange={() => setIsaDark(!isDark)}
+     />
+
+
+
         <h1> Quiz App</h1>
         <hr/>
         {result?<></>:<>    <h2>{index+1}. {question.question}</h2>
@@ -83,12 +92,12 @@ const quiz = () => {
             <li ref={option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
             
                     </ul>
-                       <button onClick={next}>Next</button>
+                       <button onClick={next} data-theme="dark">Next</button>
 
-            <div className='index'> {index+1} 0f {data.length} questions</div>
+            <div className='index' data-theme="dark"> {index+1} 0f {data.length} questions</div>
  </>}
  {result?<>   <h2>You Scored {score} out of {data.length}</h2>
-   <button onClick={reset}>reset</button>
+   <button onClick={reset} data-theme="dark">reset</button>
    </>:<> </>}
 
 </div>

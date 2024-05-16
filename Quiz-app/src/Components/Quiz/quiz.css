@@ -2,7 +2,7 @@
     width: 640px;
     margin: auto;
     margin-top: 150px;
-    background: rgb(167, 163, 163);
+    background: var(--background-color);
     color: bisque;
     display: flex;
     flex-direction: column;
