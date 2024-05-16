@@ -53,7 +53,7 @@ export const data = [
         option1:"In the <head> section",
         option2:"In the <body> section",
         option3:"At the end of the document",
-        option4:"You can\'t refer to an external style sheet",
+        option4:"You can't refer to an external style sheet",
         ans: 1
     }
   ];
