@@ -9,6 +9,8 @@
     gap: 20px;
     border-radius: 10px;
     padding: 40px 50px;
+    transition: background-color 250ms ease-in-out;
+
 }
 .container hr{
     height: 2px;

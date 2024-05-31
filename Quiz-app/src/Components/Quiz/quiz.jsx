@@ -1,6 +1,6 @@
 import React, {useState, useRef } from 'react'
 import { data } from '../../assets/data';
-
+import  useLocalStorage  from "use-local-storage";
 import './Quiz.css'
 import { Toggle } from '../Toggle';
 const quiz = () => {
@@ -63,7 +63,7 @@ const quiz = () => {
     setResult(false);
    }
 
-   const[isDark,setIsaDark] =useState(true);
+   const[isDark,setIsaDark] =useLocalStorage("isDark",false);
   
 
 
