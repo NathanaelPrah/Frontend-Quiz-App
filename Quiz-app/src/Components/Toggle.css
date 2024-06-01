@@ -1,28 +1,37 @@
 .toggle-container{
-    position:absolute ;
-    top: 2em;
-    right: 2em;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
 }
-
+.toogle-icon{
+    font-size: 20px;
+    margin: 0 10px;
+}
 .toggle{
-    visibility: hidden;
+    display: none;
 }
 
 .toggle + label{
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 21px;
+    background-color: #ccc;
+    border-radius: 25px;
     cursor:pointer ;
-    color: var(--primary-text-color);
+    transition: background-color 0.3s ease;
 }
-.toggle +label::before{
+.toggle-label::before{
     content: "";
-    height: 1em;
-    width: 2em;
-    border-radius: 1em;
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
     background-color: var(--toggle-bg);
     margin-right: 0.5em;
-    transition: background-color 250ms ease-in-out;
+    transition: transform 0.3s ease;
 }
 
 .toggle +label::after{
@@ -37,3 +46,9 @@
 .toggle:checked+label::after{
     transform: translateX(100%);
 }
+.toogle:checked+.toogle-label{
+    background-color: #6200ea;
+}
+ .toogle:checked+.toggle-label::before{
+    transform: translateX(25px);
+ }

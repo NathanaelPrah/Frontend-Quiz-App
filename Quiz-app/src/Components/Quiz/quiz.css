@@ -7,10 +7,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 40px 50px;
     transition: background-color 250ms ease-in-out;
-
+    background-image: ;
 }
 .container hr{
     height: 2px;
@@ -24,8 +24,9 @@
 .container ul li{
     display: flex ;
     align-items: center;
+    flex-direction: column;
     height: 70px;
-    padding-left: 15px;
+    padding-top: 25px;
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -36,7 +37,7 @@
     margin: auto;
     width: 250px;
     height: 65px;
-    background: #553f9a;
+    background: #5d3fb6;
     color:beige;
     font-size: 25px;
     font-weight: 500;

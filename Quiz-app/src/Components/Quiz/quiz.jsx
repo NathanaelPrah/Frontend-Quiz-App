@@ -1,10 +1,21 @@
 import React, {useState, useRef } from 'react'
 import { data } from '../../assets/data';
 import  useLocalStorage  from "use-local-storage";
+import { useMediaQuery } from 'react-responsive'
 import './Quiz.css'
 import { Toggle } from '../Toggle';
-const quiz = () => {
 
+
+
+
+
+
+
+
+
+
+
+const quiz = () => {
     let [index,setIndex] = useState(0);
     let [question,setQuestion] = useState(data[index]);
     let [lock,setLock] = useState(false);
@@ -18,7 +29,6 @@ const quiz = () => {
     let option4 = useRef(null);
 
     let option_array =[ option1,option2,option3,option4];
-
 
     const checkAns =(e,ans)=>{
     if (lock === false){

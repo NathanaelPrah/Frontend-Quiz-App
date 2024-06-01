@@ -4,14 +4,16 @@ import"./Toggle.css"
 export const Toggle=({handleChange, isChecked}) =>{
     return(
         <div className="toggle-container">
+            <span className="toogle-icon">🌞</span>
             <input
             type="checkbox"
-            id="check"
+            id="toogle"
             className="toggle"
             onChange={handleChange}
             checked={isChecked}
             />
-            <label htmlFor="check">Dark Mode</label>
+            <label htmlFor="toogle" className="toogle-label"></label>
+            <span className="toogle-icon">🌜</span>
         </div>
     );
 };
